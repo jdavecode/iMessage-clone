@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,14 @@
+.Imessage {
+  display: flex;
+}
+@media screen and (min-width: 320px) {
+  .Imessage{
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Imessage {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,74 @@
+.SideBarChats {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.SideBarChats:hover {
+  background: #3e93fd;
+  color: #ffffff;
+}
+
+.SideBarChatsInfo {
+  margin-left: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.SideBarChatsInfo > small {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+
+@media screen and (min-width: 320px) {
+  .SideBarChats {
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  .SideBarChatsInfo > h3 {
+    font-size: 12px;
+  }
+  .SideBarChatsInfo > small {
+    position: unset;
+    top: unset;
+    right: unset;
+    display: none;
+  }
+  .SideBarChatsInfo > p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .SideBarChats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: unset;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 1px solid lightgray;
+    cursor: pointer;
+  }
+
+  .SideBarChatsInfo > h3 {
+    font-size: 14px;
+  }
+
+  .SideBarChatsInfo > small {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    display: flex;
+  }
+  .SideBarChatsInfo > p {
+    display: block;
+  }
+}

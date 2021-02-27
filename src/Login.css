@@ -1,0 +1,52 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 110%;
+  background: #000;
+}
+
+.loginLogo {
+  border-radius: 99px;
+  margin: 100px auto;
+}
+.loginLogo img {
+  object-fit: contain;
+  height: 150px;
+  border-radius: 99px;
+}
+
+.login > button {
+  margin: auto;
+
+  border: none;
+  width: 150px;
+  background-color: green;
+  color: #eff2f5;
+  font-weight: 800;
+}
+
+.login > button:hover {
+  background: #eff2f5;
+  color: green;
+}
+
+@media screen and (min-width: 320px) {
+  .login > button {
+    width: 150px;
+  }
+  .loginLogo img {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login > button {
+    width: 300px;
+  }
+  .loginLogo img {
+    height: 200px;
+  }
+}
